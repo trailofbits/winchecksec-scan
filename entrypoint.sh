@@ -2,7 +2,7 @@
 
 set -e
 
-WINCHECKSEC=./winchecksec
+WINCHECKSEC=/app/winchecksec
 
 debug() {
   echo "::debug::${1}"

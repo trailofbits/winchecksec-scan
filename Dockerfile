@@ -44,7 +44,8 @@ FROM alpine:3.13 as run
 
 RUN apk add libstdc++ libgcc
 
-COPY --from=build /build/winchecksec/winchecksec /
-COPY entrypoint.sh /entrypoint.sh
+RUN mkdir /app
+COPY --from=build /build/winchecksec/winchecksec /app/
+COPY entrypoint.sh /app
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
