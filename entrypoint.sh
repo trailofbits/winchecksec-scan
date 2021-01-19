@@ -34,10 +34,16 @@ for path in ${paths}; do
   debug "checking ${path}"
   begingroup "Winchecksec: ${path}"
 
+  path="${GITHUB_WORKSPACE}/${path}"
+  if [ ! -f "${path}" ]; then
+    error "no such file: ${path}"
+    exit 1
+  fi
+
   # N.B.: we could run all paths at once with a single winchecksec invocation,
   # but running each independently makes the subsequent operations simpler.
   result=$(mktemp -u)
-  "${WINCHECKSEC}" --json "${path}" > "${result}"
+  "${WINCHECKSEC}" --json "${GITHUB_WORKSPACE}/${path}" > "${result}"
 
   for check in ${checks}; do
     debug "running ${check} on ${path}"
