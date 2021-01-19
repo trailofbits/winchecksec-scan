@@ -15,4 +15,4 @@ jobs:
         id: winchecksec
         with:
           paths: test/assets/64/pegoat.exe
-          checks: aslr highEntropyVA nx seh gs rfg
+          checks: aslr highEntropyVA nx seh gs
