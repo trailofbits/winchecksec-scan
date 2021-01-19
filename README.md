@@ -18,6 +18,8 @@ and relative to the workspace directory.
 
 ### `checks`
 
+**Required**.
+
 A space-separated list of Winchecksec checks that **must** pass.
 
 Valid check names:
