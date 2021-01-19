@@ -1,0 +1,16 @@
+name: Winchecksec
+description: Scan binaries for security features with Winchecksec
+inputs:
+  checks:
+    description: Require these checks to pass (space separated)
+    required: true
+    default: all
+  paths:
+    decription: Paths to binaries to scan (space separated, relative to workspace)
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.checks }}
+    - ${{ inputs.paths }}
