@@ -1,6 +1,8 @@
 Winchecksec GitHub Action
 =========================
 
+![CI](https://github.com/trailofbits/winchecksec-github-action/workflows/CI/badge.svg)
+
 **NOTE**: This is a work in progress!
 
 This repository provides a GitHub Action for running
