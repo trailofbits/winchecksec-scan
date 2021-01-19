@@ -42,7 +42,7 @@ RUN cmake -B winchecksec -S source/winchecksec \
 
 FROM alpine:3.13 as run
 
-RUN apk add libstdc++ libgcc
+RUN apk add libstdc++ libgcc jq
 
 RUN mkdir /app
 COPY --from=build /build/winchecksec/winchecksec /app/

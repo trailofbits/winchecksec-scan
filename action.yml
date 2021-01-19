@@ -4,7 +4,6 @@ inputs:
   checks:
     description: Require these checks to pass (space separated)
     required: true
-    default: all
   paths:
     decription: Paths to binaries to scan (space separated, relative to workspace)
     required: true

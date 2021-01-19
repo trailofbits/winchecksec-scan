@@ -14,4 +14,5 @@ jobs:
       - uses: ./
         id: winchecksec
         with:
-          paths: foo bar
+          paths: test/assets/64/pegoat.exe
+          checks: aslr highEntropyVA nx seh gs
