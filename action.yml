@@ -1,4 +1,4 @@
-name: Winchecksec
+name: winchecksec-scan
 description: Scan binaries for security features with Winchecksec
 inputs:
   checks:
