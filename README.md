@@ -3,8 +3,6 @@ winchecksec-scan
 
 ![CI](https://github.com/trailofbits/winchecksec-scan/workflows/CI/badge.svg)
 
-**NOTE**: This is a work in progress!
-
 This repository provides a GitHub Action (`winchecksec-scan`) for running
 [Winchecksec](https://github.com/trailofbits/winchecksec) on one or more
 Windows binaries.
