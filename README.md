@@ -1,11 +1,11 @@
-Winchecksec GitHub Action
-=========================
+winchecksec-scan
+================
 
-![CI](https://github.com/trailofbits/winchecksec-github-action/workflows/CI/badge.svg)
+![CI](https://github.com/trailofbits/winchecksec-scan/workflows/CI/badge.svg)
 
 **NOTE**: This is a work in progress!
 
-This repository provides a GitHub Action for running
+This repository provides a GitHub Action (`winchecksec-scan`) for running
 [Winchecksec](https://github.com/trailofbits/winchecksec) on one or more
 Windows binaries.
 
@@ -42,7 +42,7 @@ Valid check names:
 ## Example usage
 
 ```yaml
-uses: trailofbits/winchecksec-github-action@v1
+uses: trailofbits/winchecksec-scan@v1
 with:
   paths: build/foo.exe build/bar.exe
   checks: aslr highEntropyVA nx
