@@ -21,7 +21,7 @@ endgroup() {
 }
 
 do_check() {
-  query=".mitigations.${1}.presence"
+  query=".[0].mitigations.${1}.presence"
   result="${2}"
 
   [ "$(jq --raw-output "${query}" < "${result}")" = "Present" ]
